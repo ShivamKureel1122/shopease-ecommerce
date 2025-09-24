@@ -17,7 +17,7 @@ const app = express()
 const PORT = process.env.PORT || 5000
 
 app.use(cors({
-    origin: "https://shopease-ecommerce-store.netlify.app/",
+    origin: "https://shopease-ecommerce-store.netlify.app",
     credentials: true,
 }))
 app.use(express.json({ limit: "10mb" }))
