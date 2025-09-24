@@ -3,11 +3,8 @@ import dotenv from 'dotenv'
 import Coupon from '../models/coupon.js'
 import Order from '../models/order.js'
 import { stripe } from '../lib/stripe.js'
-import currency from 'currency.js'
 
 dotenv.config()
-const INR_TO_USD = 0.011
-const USD_TO_INR = 88.09
 
 async function createStripeCoupon(discountPercentage) {
 	const coupon = await stripe.coupons.create({

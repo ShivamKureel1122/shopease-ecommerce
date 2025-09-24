@@ -46,7 +46,6 @@ if (process.env.NODE_ENV === "production") {
 const startServer = async () => {
     try {
         await connectDB()
-
         await createAdminIfNotExists()
 
         app.listen(PORT, () => {
