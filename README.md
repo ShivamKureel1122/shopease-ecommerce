@@ -52,7 +52,7 @@ It provides a **customer storefront** with secure checkout and an **admin dashbo
 
 ## 🔑 Environment Variables
 
-Create a `.env` file in the **server** directory with the following:
+Create a `.env` file in the **backend** directory with the following:
 
 ```env
 PORT=5000
